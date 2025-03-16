@@ -1,9 +1,9 @@
 # Hikashop Group Plugin
 
-This plugin enables you to change the group of a user after purchasing a product in Hikashop. Works with Joomla! 4x and 5x and Hikashop 5.x
+This plugin enables you to change the group of a user after purchasing a product in Hikashop Starter. Works with Joomla! 4 and is backward compatible with Joomla! 5. 
 
 ## Description
-The Hikashop Group Plugin allows you to automatically change a user's group in Joomla after they purchase a specific product in Hikashop. This is useful for managing user permissions and access based on their purchases.
+The Hikashop Group Plugin allows you to automatically add a user to a new group in Joomla after they purchase a specific product in Hikashop Starter. This is useful for managing user permissions and access based on their purchases.
 
 ## Features
 - Changes user group after product purchase
@@ -18,14 +18,17 @@ The Hikashop Group Plugin allows you to automatically change a user's group in J
 |          | | | - 1: Yes |
 
 ## Installation
-1. Download the plugin from: [https://github.com/brettvac/hikashop-user-group/archive/refs/heads/main.zip](https://github.com/brettvac/hikashop-user-group/archive/refs/heads/main.zip)
-2. Install via Joomla's extension manager
-3. Enable the plugin
-4. Choose the user group after purchase in the product options
+1. Go to System > Install and choose Extensions
+2. Choose Install from URL and use: [https://github.com/brettvac/hikashop-user-group/archive/refs/heads/main.zip](https://github.com/brettvac/hikashop-user-group/archive/refs/heads/main.zip)
+4. Enable the plugin
+5. Choose the user group after purchase in the product options
 
 ## Files
 - `group.php` - Main plugin file
+- `group.xml` - Manifest file
 
 ## Source
 The code for this plugin originates from this forum post:  
 [https://www.hikashop.com/forum/orders-management/866710-user-group-after-purchase-with-multiple-purchase.html#148692](https://www.hikashop.com/forum/orders-management/866710-user-group-after-purchase-with-multiple-purchase.html#148692)
+
+I simply asked ChatGPT to update the parts that weren't working in Joomla! 4.
