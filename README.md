@@ -20,7 +20,8 @@ The Hikashop Group Plugin allows you to automatically change a user's group in J
 ## Installation
 1. Download the plugin from: [https://github.com/brettvac/hikashop-user-group/archive/refs/heads/main.zip](https://github.com/brettvac/hikashop-user-group/archive/refs/heads/main.zip)
 2. Install via Joomla's extension manager
-3. Configure the plugin parameters in Hikashop
+3. Enable the plugin
+4. Choose the user group after purchase in the product options
 
 ## Files
 - `group.php` - Main plugin file
