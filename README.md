@@ -1,6 +1,8 @@
 # Hikashop Group Plugin
 
-This plugin enables you to change the group of a user after purchasing a product in Hikashop Starter. Works with Joomla! 4 and is backward compatible with Joomla! 5. 
+This plugin enables you to change the group of a user after purchasing a product in Hikashop Starter. 
+
+Works with Joomla! 4 and is backward compatible with Joomla! 5. I believe this plugin ships with the Business edition.
 
 ## Description
 The Hikashop Group Plugin allows you to automatically add a user to a new group in Joomla after they purchase a specific product in Hikashop Starter. This is useful for managing user permissions and access based on their purchases.
