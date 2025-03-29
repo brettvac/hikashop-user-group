@@ -19,29 +19,31 @@ class plgHikashopGroup extends JPlugin {
     parent::__construct($subject, $config);
   }
 
-  public function onProductDisplay(&$element, &$html) {
-    ob_start();
-?>
-    <div class="hkc-xl-4 hkc-lg-6 hikashop_product_block hikashop_product_edit_meta">
-        <div class="hikashop_product_part_title">
-            <?php echo JText::_('USER_GROUP_AFTER_PURCHASE'); ?>
-        </div>
-        <dl class="hika_options">
-            <dt>
-                <label for="product_group_after_purchase"><?php echo JText::_('GROUP_NAME'); ?></label>
-            </dt>
-            <dd>
-                <?php
-                $subscriptiontype = hikashop_get('type.subscription');
-                echo $subscriptiontype->display('product_group_after_purchase', $element->product_group_after_purchase, 'product');
-                ?>
-            </dd>
-        </dl>
-    </div>
-<?php
-    $html[] = ob_get_clean();
-  }
-
+public function onProductDisplay(&$element, &$html) {
+        $subscriptiontype = hikashop_get('type.subscription');
+        
+        $html['product_group_after_purchase'] = 
+            '<div class="hkc-xl-4 hkc-lg-6 hikashop_product_block hikashop_product_edit_meta">' .
+                '<div class="hikashop_product_part_title">' . 
+                    JText::_('USER_GROUP_AFTER_PURCHASE') .
+                '</div>' .
+                '<dl class="hika_options">' .
+                    '<dt>' .
+                        '<label for="product_group_after_purchase">' . 
+                            JText::_('GROUP_NAME') . 
+                        '</label>' .
+                    '</dt>' .
+                    '<dd>' .
+                        $subscriptiontype->display(
+                            'product_group_after_purchase', 
+                            $element->product_group_after_purchase, 
+                            'product'
+                        ) .
+                    '</dd>' .
+                '</dl>' .
+            '</div>';
+    }
+    
   public function onAfterOrderCreate(&$order, &$send_email) {
     return $this->onAfterOrderUpdate($order, $send_email);
   }
