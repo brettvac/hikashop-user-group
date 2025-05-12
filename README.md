@@ -13,11 +13,13 @@ The Hikashop Group Plugin allows you to automatically add a user to a new group 
 - Works with Joomla session handler set to database mode
 
 ## Configuration Options
-| Parameter    | Type  | Default  | Description                                                                 |
-|--------------|-------|----------|-----------------------------------------------------------------------------|
-| force_logout | Radio | 1 (Yes)  | Force user logout on group update (only with Joomla session handler option set to use the database). |
-| Options:     |       |          | - 0: No                                                                    |
-|              |       |          | - 1: Yes                                                                   |
+- **Parameter:** `force_logout`  
+  - **Type:** Radio  
+  - **Default:** 1 (Yes)  
+  - **Description:** Force user logout on group update (only with Joomla session handler option set to use the database).  
+  - **Options:**  
+    - 0: No  
+    - 1: Yes  
 
 ## Installation
 1. Go to System > Install and choose Extensions
