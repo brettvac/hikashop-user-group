@@ -31,8 +31,9 @@ The Hikashop Group Plugin allows you to automatically add a user to a new group 
 - `group.php` - Main plugin file
 - `group.xml` - Manifest file
 
-## Source
-The code for this plugin originates from this forum post:  
-[https://www.hikashop.com/forum/orders-management/866710-user-group-after-purchase-with-multiple-purchase.html#148692](https://www.hikashop.com/forum/orders-management/866710-user-group-after-purchase-with-multiple-purchase.html#148692)
+## FAQ
+**Q:What's the original source of this plugin?**  
+**A:** The code for this plugin originates from this forum post: [https://www.hikashop.com/forum/orders-management/866710-user-group-after-purchase-with-multiple-purchase.html#148692](https://www.hikashop.com/forum/orders-management/866710-user-group-after-purchase-with-multiple-purchase.html#148692). I simply asked ChatGPT to update the parts that weren't working in Joomla! 4.
 
-I simply asked ChatGPT to update the parts that weren't working in Joomla! 4.
+**Q: Got any more awesome Joomla! plugins?**  
+**A:** Find them [right here](https://naftee.com)
